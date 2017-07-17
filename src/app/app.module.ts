@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule} from '@angular/http';
+import { FormsModule} from '@angular/forms';
 
 import { APP_ROUTING } from './app.routes';
 
@@ -19,6 +21,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
     APP_ROUTING
   ],
   providers: [
